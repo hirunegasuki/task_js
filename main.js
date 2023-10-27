@@ -10,11 +10,11 @@ let timeoutId;
 
 //時間を取得して桁数を合わせる
 function countUp(){
-  const d = new Date(Date.now() - startTime); //現在の時刻（Date.now）からstartを押した時の時刻(startTime)を引く
+  const d = new Date(Date.now() - startTime + elapsedTime); //現在の時刻（Date.now）からstartを押した時の時刻(startTime)を引く
   const h = String(d.getUTCHours()).padStart(2, '0');
-  const m = String(d.getMinutes()).padStart(2, '0');
-  const s = String(d.getSeconds()).padStart(2, '0');
-  const ms = String(d.getMilliseconds()).slice(-2);
+  const m = String(d.getUTCMinutes()).padStart(2, '0');
+  const s = String(d.getUTCSeconds()).padStart(2, '0');
+  const ms = String(d.getUTCMilliseconds()).slice(-2);
   timer.textContent = h + ':' + m + ':' + s + ':' + ms;
 
   timeoutId = setTimeout(() => {
