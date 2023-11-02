@@ -19,19 +19,14 @@ function buttonClick(event) {
 }
 
 function symbol(target) {
-  //var last = result.textContent.slice(-1);　//末尾の文字列を取得
-  //var first = result.textContent.slice(0, 1);　//先頭の文字列を取得
-  var last = calcText.slice(-1);　//末尾の文字列を取得
-  var first = calcText.slice(0, 1);　//先頭の文字列を取得
+  var last = result.textContent.slice(-1);　//末尾の文字列を取得
+  var first = result.textContent.slice(0, 1);　//先頭の文字列を取得
   
-  if(last === "+" || last === "-" || last === "*" || last === "/"){
-    target.value.slice(0, -1);
+  if (last === "+" || last === "-" || last === "*" || last === "/"){
+    let str = result.textContent.slice(0, -1);
     result.textContent += target.value;
-
-  //if (last === "+" || last === "-" || last === "*" || last === "/"){
-    //let str = result.textContent.slice(0, -1);
-    //result.textContent += target.value;
-  }
+    console.log(str)
+   }
 }
 //*/
 
