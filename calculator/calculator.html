@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="calculator.css">
+ <title>電卓</title>
+ </head>
+ 
+ <body>
+ <sction class="task">
+   <div class="task_wrap">
+     <div id="result">0</div>
+     <div class="button_wrap">
+       <button value="" class="btn clear">AC</button>
+       <button value="/" onclick="symbol(this)" class="btn symbol">/</button>
+       <button value="7" class="btn number">7</button>
+       <button value="8" class="btn number">8</button>
+       <button value="9" class="btn number">9</button>
+       <button value="*" onclick="symbol(this)" class="btn symbol">*</button>
+       <button value="4" class="btn number">4</button>
+       <button value="5" class="btn number">5</button>
+       <button value="6" class="btn number">6</button>
+       <button value="-" onclick="symbol(this)" class="btn symbol">-</button>
+       <button value="1" class="btn number">1</button>
+       <button value="2" class="btn number">2</button>
+       <button value="3" class="btn number">3</button>
+       <button value="+" onclick="symbol(this)" class="btn symbol">+</button>
+       <button value="0" class="btn number">0</button>
+       <button value="00" class="btn number">00</button>
+       <button value="." class="btn number">.</button>
+       <button value="=" class="btn symbol">=</button>     
+     </div>
+   </div>
+ </sction>
+ <script src="calculator2.js" charset="utf-8"></script>
+ </body>
+ </html>

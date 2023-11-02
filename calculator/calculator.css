@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+html, body, div, h1, h2, p, ul, li {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   color: #333;
+   -webkit-font-smoothing: antialiased;
+}
+*, *:before, *:after {
+   word-break: break-all;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+ol, ul, li {
+   list-style: none;
+}
+
+.task {
+  display: block;
+  position: relative;
+  margin: 50px;
+}
+.task .task_wrap {
+  max-width: 380px;
+  width: 100%;
+}
+.task .task_wrap #result {
+  padding: 10px 20px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: right;
+  width: 100%;
+  min-height: 68px;
+  border: none;
+}
+.task .button_wrap {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 6px;
+}
+.task .button_wrap .btn {
+  width : 88px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+.task .button_wrap .number {
+  background-color: #f5f5f5;
+}
+.task .button_wrap .symbol {
+  background-color: #c8d4e0;
+  font-size: 22px;
+}
+.task .button_wrap .clear {
+  background-color: #e0cacd;
+  width: 276px;
+}
+.task .button_wrap .btn:hover {
+  cursor: pointer;
+}
+.task .button_wrap .number:hover {
+  background-color: #ebebeb;
+}
+.task .button_wrap .symbol:hover {
+  background-color: #bdcad9;
+}
+.task .button_wrap .clear:hover {
+  background-color: #d4babd;
+}
