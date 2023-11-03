@@ -17,8 +17,8 @@ function buttonClick(event) {
   }
   //else if(text === "+" || text === "-" || text === "*" || text === "/") {
   else if(text === symbol){
-    //calcText += symbol;
-    return;
+    calcText += symbol;
+    //return;
   }
   else {
     calcText = calcText += text;
